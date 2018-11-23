@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Scrollspy</title>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+      smoothScroll.init({
+        selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+        selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+        speed: 900, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+        callback: function ( anchor, toggle ) {} // Function to run after scrolling
+      });
+    </script>
+  </head>
+  <body data-spy="scroll" data-target="#navbar-scroll">
+    <style>
+       body {
+          position: relative;
+       }
+
+       .slider {
+        background: url("images/bg-3.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+      }  
+    </style>
+    
+    <section class="container-fluid d-flex justify-content-center align-items-center slider">
+      <h1 class="display-1 text-white titulo">¡Orlando!</h1>
+    </section>
+
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top" id="navbar-scroll" style="background-color: #000E34;">  
+      <a class="navbar-brand" href="index.html">
+        <img src="images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo Bootstrap">
+        Orlando
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>  
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="navbar-nav mr-auto ml-auto font-weight-bold">
+          <a data-scroll class="nav-item nav-link active" href="#sec-1">Sección 1</a>
+          <a data-scroll class="nav-item nav-link" href="#sec-2">Sección 2</a>
+          <a data-scroll class="nav-item nav-link" href="#sec-3">Sección 3</a>
+          <a data-scroll class="nav-item nav-link" href="#sec-4">Sección 4</a>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container-fluid">
+      <div id="sec-1" class="row d-flex justify-content-center align-items-center" style="height: 100vh; background-color: #54ae99">
+          <h1 class="display-1">Sección 1</h1>
+      </div>
+    </div>
+      
+    <div class="container-fluid">
+      <div id="sec-2" class="row d-flex justify-content-center align-items-center" style="height: 100vh; background-color: #54bc49">
+        <h1 class="display-1">Sección 2</h1>
+      </div>
+    </div>
+
+      <div>
+        <div id="sec-3" class="row d-flex justify-content-center align-items-center" style="height: 100vh; background-color: #32ad79">
+          <h1 class="display-1">Sección 3</h1>
+        </div>
+      </div>
+
+      <div>
+        <div id="sec-4" class="row justify-content-center align-items-center" style="height: 100vh; background-color: #fd365a">
+          <h1 class="display-1">Sección 4</h1>
+        </div>
+      </div>
+    <!-- </div> -->
+  
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

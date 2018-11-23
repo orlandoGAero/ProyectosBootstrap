@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Flexbox con Bootstrap</title>
+  </head>
+  <body>
+    <style>
+      .borde { border: 1px #ce0 solid; text-align: center; height: 40px; }
+      .color1 { background: #2b4570; height: 500px; }   
+      .color2 { background: #72cc9f }   
+      .color3 { background: #e86658 }   
+      .color4 { background: #65a0b2 }   
+      .color5 { background: #75c655 }   
+    </style>
+    <div class="container"><h1>Alineamientos</h1></div>
+    <div class="container">
+      <div class="row color1 align-items-center justify-content-center justify-content-around">
+        <div class="borde color2 col align-self-start">
+          nivel 1 
+          <div class="row color3">
+            <div class="col-2">Sub1</div>
+            <div class="col-2">Sub2</div>
+            <div class="col-8">Sub3</div>
+          </div>
+        </div>
+        <div class="borde color2 col-1">2</div>
+        <div class="borde color2 col-1 offset-md-3">3</div>
+        <div class="borde color2 col-1">4</div>
+        <div class="borde color2 col-1 order-first">5</div>
+        <div class="borde color2 col-1 align-self-end">6</div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

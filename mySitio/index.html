@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>Sitio Web</title>
+  </head>
+  <body>
+    <style>
+      .titulo {
+        font-size: 6rem;
+      }
+      .slider {
+        background: url("images/bg-3.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+      }  
+    </style>
+    
+   <!--  <section class="container-fluid slider d-flex justify-content-center align-items-center">
+      <h1 class="display-1 text-white titulo">¡Orlando!</h1>
+    </section> -->
+    
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/foto1.jpeg" alt="First slide" style="height: 100vh;">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda impedit, repudiandae distinctio ratione sint ad cupiditate blanditiis suscipit minima. Magnam natus laudantium eligendi iure aut modi optio aperiam adipisci tempore.</p>
+            </div>
+          </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/foto2.jpeg" alt="Second slide" style="height: 100vh;">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda impedit, repudiandae distinctio ratione sint ad cupiditate blanditiis suscipit minima. Magnam natus laudantium eligendi iure aut modi optio aperiam adipisci tempore.</p>
+            </div>
+          </div>
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/foto3.jpeg" alt="Third slide" style="height: 100vh;">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda impedit, repudiandae distinctio ratione sint ad cupiditate blanditiis suscipit minima. Magnam natus laudantium eligendi iure aut modi optio aperiam adipisci tempore.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+    <!-- fin carousel -->
+
+    <!-- nav -->
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top" style="background-color: #000E34;">  
+      <a class="navbar-brand" href="index.html">
+        <img src="images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo Bootstrap">
+        Orlando
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>  
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="navbar-nav mr-auto ml-auto font-weight-bold">
+          <a class="nav-item nav-link active" href="index.html">Inicio</a>
+          <a class="nav-item nav-link" href="#">Nosotros</a>
+          <a class="nav-item nav-link" href="servicios.html">Servicios</a>
+          <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row mt-2">
+          <a href="https://www.facebook.com" class="mr-2"><img src="images/facebook.svg" width="40" height="40" alt="Facebook"></a>
+          <a href="https://www.twitter.com" class="mr-2"><img src="images/twitter.svg" width="40" height="40" alt="Twitter"></a>
+          <a href="https://www.youtube.com" class="mr-2"><img src="images/youtube.svg" width="40" height="40" alt="Youtube"></a>
+        </div>
+      </div>
+    </nav>
+    <!-- fin nav -->
+
+    <!-- cards -->
+    <section class="container">
+      <div class="card-deck mt-5 pt-5">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/card1.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+              Leer más
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores explicabo maiores atque itaque unde qui accusantium beatae fuga omnis quam, doloremque, necessitatibus minima doloribus pariatur recusandae facilis ducimus neque quo voluptatem magni placeat ullam! Sed dolores labore in ad earum, odit ullam, tempore cum aliquam ipsam eos quis saepe autem.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed recusandae eligendi, voluptas atque ratione vero facere incidunt explicabo officia ullam cum voluptate animi totam, aspernatur quo eum reiciendis esse molestias sint, molestiae perspiciatis maxime. Perspiciatis nesciunt amet, ab culpa delectus cupiditate qui ipsa sapiente. Qui magni hic eos consequatur, quibusdam error, necessitatibus inventore, mollitia sequi amet possimus aperiam optio! Ipsam rerum enim, voluptate voluptas? Eum consequuntur ex asperiores repellat, neque?</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/card2.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Leer más
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores explicabo maiores atque itaque unde qui accusantium beatae fuga omnis quam, doloremque, necessitatibus minima doloribus pariatur recusandae facilis ducimus neque quo voluptatem magni placeat ullam! Sed dolores labore in ad earum, odit ullam, tempore cum aliquam ipsam eos quis saepe autem.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/card3.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+              Leer más
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quisquam non rem sint, neque repudiandae sequi voluptate? Nam, eveniet? Distinctio, dolore ex voluptate quam, magnam ipsum amet iusto dolorem cumque.</b>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-deck pt-5">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/card3.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+              Leer más
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-tittle" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6 d-flex">
+                          <img src="images/cards2.png" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                          <h5 class="display-4 text-center">Lorem ipsum</h5>
+                          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores similique perferendis magni voluptate obcaecati nobis quos deleniti quae amet ipsam corrupti veritatis, aperiam laborum molestias praesentium aliquid possimus dicta voluptatum, culpa placeat delectus commodi. Eaque perferendis delectus provident saepe maiores, vel fugit nemo deleniti hic.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/card3.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+              Leer más
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  </div>
+                  <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top img-fluid" src="images/card3.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                Leer más
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin cards -->
+    
+    <!-- jumbotron -->
+    <div class="jumbotron mt-5 bg-success rounded-0">
+      <div class="container">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- fin jumbotron -->
+
+    <section class="container">
+      <p class="my-5 text-uppercase text-center font-weight-bold font-italic">Lorem ipsum dolor.</p>
+      <p class="text-success font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nemo ipsam voluptates officia deleniti, maiores quae doloremque recusandae rem aperiam rerum sunt labore temporibus voluptatum nulla, enim, sint iure. Dolores, vitae, illum impedit quia blanditiis porro. Veniam sint a quae sit soluta quasi obcaecati tenetur, ipsa doloribus reiciendis, natus ducimus, officiis architecto. Harum assumenda neque, tempore laudantium amet ut eaque autem quas, optio quia eius recusandae, voluptatem ipsa asperiores sed odit sint? Optio quibusdam nesciunt modi asperiores! Illum vero nihil praesentium dicta explicabo doloremque vel sint laboriosam quisquam ipsa alias voluptas consequuntur fugiat, omnis voluptates, labore vitae amet libero. Ex.</p>
+      <p class="bg-info text-white text-justify p-4 w-25 float-left mr-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nemo ipsam voluptates officia deleniti, maiores quae doloremque recusandae rem aperiam rerum sunt labore temporibus voluptatum nulla, enim, sint iure. Dolores, vitae, illum impedit quia blanditiis porro. Veniam sint a quae sit soluta quasi obcaecati tenetur, ipsa doloribus reiciendis, natus ducimus, officiis architecto. Harum assumenda neque, tempore laudantium amet ut eaque autem quas, optio quia eius recusandae, voluptatem ipsa asperiores sed odit sint? Optio quibusdam nesciunt modi asperiores! Illum vero nihil praesentium dicta explicabo doloremque vel sint laboriosam quisquam ipsa alias voluptas consequuntur fugiat, omnis voluptates, labore vitae amet libero. Ex.</p>
+      <p class="bg-danger border text-justify text-white font-weight-bold p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nemo ipsam voluptates officia deleniti, maiores quae doloremque recusandae rem aperiam rerum sunt labore temporibus voluptatum nulla, enim, sint iure. Dolores, vitae, illum impedit quia blanditiis porro. Veniam sint a quae sit soluta quasi obcaecati tenetur, ipsa doloribus reiciendis, natus ducimus, officiis architecto. Harum assumenda neque, tempore laudantium amet ut eaque autem quas, optio quia eius recusandae, voluptatem ipsa asperiores sed odit sint? Optio quibusdam nesciunt modi asperiores! Illum vero nihil praesentium dicta explicabo doloremque vel sint laboriosam quisquam ipsa alias voluptas consequuntur fugiat, omnis voluptates, labore vitae amet libero. Ex.</p>
+      <p class="border border-left-0 border-dark text-justify p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nemo ipsam voluptates officia deleniti, maiores quae doloremque recusandae rem aperiam rerum sunt labore temporibus voluptatum nulla, enim, sint iure. Dolores, vitae, illum impedit quia blanditiis porro. Veniam sint a quae sit soluta quasi obcaecati tenetur, ipsa doloribus reiciendis, natus ducimus, officiis architecto. Harum assumenda neque, tempore laudantium amet ut eaque autem quas, optio quia eius recusandae, voluptatem ipsa asperiores sed odit sint? Optio quibusdam nesciunt modi asperiores! Illum vero nihil praesentium dicta explicabo doloremque vel sint laboriosam quisquam ipsa alias voluptas consequuntur fugiat, omnis voluptates, labore vitae amet libero. Ex.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nemo ipsam voluptates officia deleniti, maiores quae doloremque recusandae rem aperiam rerum sunt labore temporibus voluptatum nulla, enim, sint iure. Dolores, vitae, illum impedit quia blanditiis porro. Veniam sint a quae sit soluta quasi obcaecati tenetur, ipsa doloribus reiciendis, natus ducimus, officiis architecto. Harum assumenda neque, tempore laudantium amet ut eaque autem quas, optio quia eius recusandae, voluptatem ipsa asperiores sed odit sint? Optio quibusdam nesciunt modi asperiores! Illum vero nihil praesentium dicta explicabo doloremque vel sint laboriosam quisquam ipsa alias voluptas consequuntur fugiat, omnis voluptates, labore vitae amet libero. Ex.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nemo ipsam voluptates officia deleniti, maiores quae doloremque recusandae rem aperiam rerum sunt labore temporibus voluptatum nulla, enim, sint iure. Dolores, vitae, illum impedit quia blanditiis porro. Veniam sint a quae sit soluta quasi obcaecati tenetur, ipsa doloribus reiciendis, natus ducimus, officiis architecto. Harum assumenda neque, tempore laudantium amet ut eaque autem quas, optio quia eius recusandae, voluptatem ipsa asperiores sed odit sint? Optio quibusdam nesciunt modi asperiores! Illum vero nihil praesentium dicta explicabo doloremque vel sint laboriosam quisquam ipsa alias voluptas consequuntur fugiat, omnis voluptates, labore vitae amet libero. Ex.</p>
+      <p class="bg-warning text-justify font-italic p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nemo ipsam voluptates officia deleniti, maiores quae doloremque recusandae rem aperiam rerum sunt labore temporibus voluptatum nulla, enim, sint iure. Dolores, vitae, illum impedit quia blanditiis porro. Veniam sint a quae sit soluta quasi obcaecati tenetur, ipsa doloribus reiciendis, natus ducimus, officiis architecto. Harum assumenda neque, tempore laudantium amet ut eaque autem quas, optio quia eius recusandae, voluptatem ipsa asperiores sed odit sint? Optio quibusdam nesciunt modi asperiores! Illum vero nihil praesentium dicta explicabo doloremque vel sint laboriosam quisquam ipsa alias voluptas consequuntur fugiat, omnis voluptates, labore vitae amet libero. Ex.</p>
+      <p class="border border-danger text-center rounded p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nemo ipsam voluptates officia deleniti, maiores quae doloremque recusandae rem aperiam rerum sunt labore temporibus voluptatum nulla, enim, sint iure. Dolores, vitae, illum impedit quia blanditiis porro. Veniam sint a quae sit soluta quasi obcaecati tenetur, ipsa doloribus reiciendis, natus ducimus, officiis architecto. Harum assumenda neque, tempore laudantium amet ut eaque autem quas, optio quia eius recusandae, voluptatem ipsa asperiores sed odit sint? Optio quibusdam nesciunt modi asperiores! Illum vero nihil praesentium dicta explicabo doloremque vel sint laboriosam quisquam ipsa alias voluptas consequuntur fugiat, omnis voluptates, labore vitae amet libero. Ex.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nemo ipsam voluptates officia deleniti, maiores quae doloremque recusandae rem aperiam rerum sunt labore temporibus voluptatum nulla, enim, sint iure. Dolores, vitae, illum impedit quia blanditiis porro. Veniam sint a quae sit soluta quasi obcaecati tenetur, ipsa doloribus reiciendis, natus ducimus, officiis architecto. Harum assumenda neque, tempore laudantium amet ut eaque autem quas, optio quia eius recusandae, voluptatem ipsa asperiores sed odit sint? Optio quibusdam nesciunt modi asperiores! Illum vero nihil praesentium dicta explicabo doloremque vel sint laboriosam quisquam ipsa alias voluptas consequuntur fugiat, omnis voluptates, labore vitae amet libero. Ex.</p>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
